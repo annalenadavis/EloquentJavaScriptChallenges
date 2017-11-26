@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Program Structure Challenges</title>
+</head>
+<body>
+  <p><em>🙌 Psst: have a look at the JavaScript Console 🙌</em></p>
+  <script>
+
+console.log("Let's make a triangle! 🧀🍕")
+var triangle = " ";
+for (i = 0; i <= 6; i++)
+  console.log(triangle += "#");
+
+console.log("Fizz🍻 Buzz🤳 FizzBuzz!!👏👏");
+for (i=0; i<=99; i++)
+    if (i % 3 == 0 && i % 5 == 0) {
+      console.log("FizzBuzz")
+    } else if (i % 3 == 0) {
+      console.log("Fizz");
+      continue;
+    } else if (i % 5 == 0) {
+      console.log("Buzz");
+      continue;
+    } else {
+      console.log(i)
+    };
+
+console.log("👸🤴Chess Board Time!🤴👸")
+var numberOfLines = 8;
+for (i=0; i<numberOfLines; i++)
+  if (i % 2 == 0) {
+    console.log(" # # # #");
+  } else {
+    console.log("# # # # ");
+  };
+
+  </script>
+</body>
+</html>
