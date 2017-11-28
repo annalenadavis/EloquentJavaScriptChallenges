@@ -45,14 +45,28 @@ console.log(isEven(75));
 console.log("❓-1❓");
 console.log(isEven(-1));
 
-// console.log("Bean Counting");
-// function countBs(string) {
-//   var counter = 0;
-//   for string (i=0; i < string.length; i++) {
-//
-//   }
-// }
+console.log("%cBean Counting: BBC and kakkerlak➕➕➕", "font-size: medium");
+function countBs(string) {
+  var counter = 0;
+    for(var i=0; i<string.length; i++) {
+      if (string.charAt(i) === "B"){
+        counter++;
+      }
+  }
+  return counter;
+}
+console.log(countBs("BBC"));
 
+function countChar(string, char) {
+  var counter = 0;
+  for(var i=0; i<string.length; i++) {
+    if(string.charAt(i) === char){
+      counter++;
+    }
+  }
+  return counter;
+}
+console.log(countChar("kakkerlak", "k"));
 
   </script>
 </body>
