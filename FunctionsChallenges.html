@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Program Structure Challenges</title>
+</head>
+<body>
+  <p><em>🦄 Psst: take a peek at the JavaScript Console 🦄</em></p>
+  <script>
+
+console.log("%cMinimum: Which number is smaller?‍🐥🐣🐤", "font-size: medium");
+  function min(a, b){
+    if (a < b) {
+      return a;
+    } else if (b < a) {
+      return b;
+    } else {
+      return "They are equal!";
+    }
+  }
+console.log("Is 0 or 10 smaller?");
+console.log(min(0, 10));
+console.log("Is 0 or -10 smaller?");
+console.log(min(0, -10));
+console.log("Is 2 or 2 smaller?");
+console.log(min(2, 2));
+
+console.log("%cRecursion: YAY I did it! 🤸🤸🤸🤸", "font-size: medium")
+function isEven(number) {
+  function find(current, history) {
+    if (current === 0) {
+    return true;
+  } else if (current === 1) {
+    return false;
+  } else {
+    return find(current - 2, "(" + history + " -2)");
+  }
+}
+return find(Math.abs(number), "1");
+}
+console.log("❓50❓");
+console.log(isEven(50));
+console.log("❓75❓");
+console.log(isEven(75));
+console.log("❓-1❓");
+console.log(isEven(-1));
+
+// console.log("Bean Counting");
+// function countBs(string) {
+//   var counter = 0;
+//   for string (i=0; i < string.length; i++) {
+//
+//   }
+// }
+
+
+  </script>
+</body>
+</html>
