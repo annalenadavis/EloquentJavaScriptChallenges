@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Program Structure Challenges</title>
+</head>
+<body>
+  <p><em>🐱‍👓 Psst: take a peek at the JavaScript Console 🐱‍👓</em></p>
+  <script>
+
+console.log("Sum of a Range....work in progress");
+
+var entry = [];
+
+function range(start, end) {
+  if(start<end){
+      for (i=start; i<=end; i++) {
+        entry.push(i);
+      }} else if (end<start){
+          for (i=end; i<=start; i++) {
+          entry.push(i);
+          }
+        }
+  return entry;
+}
+
+var total = 0;
+
+function sum(entry) {
+  for (i=0; i<entry.length; i++){
+    total += i;
+  }
+    return total;
+}
+
+console.log(range(1, 10));
+console.log(sum(range(1, 10)));
+
+  </script>
+</body>
+</html>
