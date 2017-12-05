@@ -9,7 +9,6 @@
   <script>
 
 console.log("%cSum of a Range 🤜🏻‍", "font-size: medium");
-
 function range(start, end, step) {
   if(step == null) step = 1;
   var entry = [];
@@ -31,7 +30,6 @@ function sum(entry) {
   }
     return total;
 }
-
 //I got soooo close! Need to think more about scope of variable, when in doubt go local?
 console.log(range(1, 10));
 console.log(range(1, 10, 2));
@@ -39,8 +37,6 @@ console.log(sum(range(1, 10)));
 
 
 console.log("%cReversing an Array 🤜🤜🏻‍", "font-size: medium");
-
-
 function reverseArray(array) {
   var newArray = [];
   for (var i=array.length-1; i >=0; i--) {
@@ -49,8 +45,21 @@ function reverseArray(array) {
   }
   return newArray;
 }
-
 console.log(reverseArray(["a", "b", "c", "d"]));
+
+function reverseInPlace(array) {
+  for (i=0; i<Math.floor(array.length/2); i++){
+    var swap = array[i];
+    array[i] = array[array.length-1-i];
+    array[array.length-1-i] = swap;
+    }
+  return array;
+}
+console.log(reverseInPlace([1, 2, 3, 4, 5]));
+
+console.log("%cA List 🤜🤜🏻‍🤜", "font-size: medium");
+
+
 
 
   </script>
