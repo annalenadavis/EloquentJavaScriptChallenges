@@ -32,10 +32,26 @@ function sum(entry) {
     return total;
 }
 
-//I got soooo close! Need to think more about scope of variable, when in doubt go local.
+//I got soooo close! Need to think more about scope of variable, when in doubt go local?
 console.log(range(1, 10));
 console.log(range(1, 10, 2));
 console.log(sum(range(1, 10)));
+
+
+console.log("%cReversing an Array 🤜🤜🏻‍", "font-size: medium");
+
+
+function reverseArray(array) {
+  var newArray = [];
+  for (var i=array.length-1; i >=0; i--) {
+    console.log(array[i]);
+    newArray.push(array[i]);
+  }
+  return newArray;
+}
+
+console.log(reverseArray(["a", "b", "c", "d"]));
+
 
   </script>
 </body>
